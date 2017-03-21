@@ -1,0 +1,602 @@
+
+@charset "UTF-8";
+
+/* line 3, ../sass/styles.scss */
+
+.stepper .nav-tabs {
+    position: relative;
+}
+
+
+/* line 6, ../sass/styles.scss */
+
+.stepper .nav-tabs > li {
+    width: 25%;
+    position: relative;
+}
+
+html{
+    height: 100%;
+}
+
+
+/* line 9, ../sass/styles.scss */
+
+.stepper .nav-tabs > li:after {
+    content: '';
+    position: absolute;
+    background: #f1f1f1;
+    display: block;
+    width: 100%;
+    height: 5px;
+    top: 30px;
+    left: 50%;
+    z-index: 1;
+}
+
+
+/* line 21, ../sass/styles.scss */
+
+.stepper .nav-tabs > li.completed::after {
+    background: #34bc9b;
+}
+
+
+/* line 26, ../sass/styles.scss */
+
+.stepper .nav-tabs > li:last-child::after {
+    background: transparent;
+}
+
+
+/* line 31, ../sass/styles.scss */
+
+.stepper .nav-tabs > li.active:last-child .round-tab {
+    background: #34bc9b;
+}
+
+
+/* line 33, ../sass/styles.scss */
+
+.stepper .nav-tabs > li.active:last-child .round-tab::after {
+    content: attr(value);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    display: block;
+}
+
+
+/* line 46, ../sass/styles.scss */
+
+.stepper .nav-tabs [data-toggle='tab'] {
+    width: 25px;
+    height: 25px;
+    margin: 20px auto;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    color: #f1f1f1;
+}
+
+
+/* line 55, ../sass/styles.scss */
+
+.stepper .nav-tabs [data-toggle='tab']:hover {
+    background: transparent;
+    border: none;
+}
+
+
+/* line 59, ../sass/styles.scss */
+
+.stepper .nav-tabs > .active > [data-toggle='tab'],
+.stepper .nav-tabs > .active > [data-toggle='tab']:hover,
+.stepper .nav-tabs > .active > [data-toggle='tab']:focus {
+    color: #34bc9b;
+    cursor: default;
+    border: none;
+}
+
+
+/* line 66, ../sass/styles.scss */
+
+.stepper .tab-pane {
+    position: relative;
+    padding-top: 50px;
+}
+
+
+/* line 70, ../sass/styles.scss */
+
+.stepper .round-tab {
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    display: inline-block;
+    border-radius: 25px;
+    background: #fff;
+    border: 2px solid #34bc9b;
+    color: #34bc9b;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* line 85, ../sass/styles.scss */
+
+.stepper .completed .round-tab {
+    background: #34bc9b;
+}
+
+
+/* line 87, ../sass/styles.scss */
+
+.stepper .completed .round-tab::after {
+    content: attr(value);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    display: block;
+}
+
+
+/* line 98, ../sass/styles.scss */
+
+.stepper .active .round-tab {
+    background: #fff;
+    border: 2px solid #34bc9b;
+}
+
+
+/* line 101, ../sass/styles.scss */
+
+.stepper .active .round-tab:hover {
+    background: #fff;
+    border: 2px solid #34bc9b;
+}
+
+
+/* line 105, ../sass/styles.scss */
+
+.stepper .active .round-tab::after {
+    display: none;
+}
+
+
+/* line 109, ../sass/styles.scss */
+
+.stepper .disabled .round-tab {
+    background: #fff;
+    color: #f1f1f1;
+    border-color: #f1f1f1;
+}
+
+
+/* line 113, ../sass/styles.scss */
+
+.stepper .disabled .round-tab:hover {
+    color: #4dd3b6;
+    border: 2px solid #a6dfd3;
+}
+
+
+/* line 117, ../sass/styles.scss */
+
+.stepper .disabled .round-tab::after {
+    display: none;
+}
+
+
+/* line 123, ../sass/styles.scss */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100%;
+}
+
+
+/* line 128, ../sass/styles.scss */
+
+#mymodal img {
+    text-align: center;
+}
+#image {
+
+    height:300px;
+    width:335px;
+}
+
+.stepper img {
+    height:400px;
+    width:400px;
+}
+
+#user {
+    font-size: 100px;
+}
+
+
+/* line 132, ../sass/styles.scss */
+
+#main {
+    margin-top: 100px;
+}
+
+
+/* line 136, ../sass/styles.scss */
+
+#radiobtn {
+    margin-top: 130px;
+}
+
+#nextbtn{
+    display: none;
+}
+#nextbtn2{
+    display: none;
+}
+#nextbtn1{
+    display: none;
+}
+#submitbtn{
+    display: none;
+}
+
+h3{
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Opensans', sans-serif;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: #333;
+}
+
+header{
+    height: 42px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+header h2{
+    display:none;
+}
+#first h1{
+    color: #FFFFFF;
+    font-family: 'Patua One', cursive;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+#first input[type=text] {
+    background: rgba(227, 231, 228, 1);
+    font-family: 'Open Sans', sans serif;
+    font-size: 1.3125em;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0;
+    height: 2.9em;
+    width: 50%;
+    }
+#first input[type=text]:focus {
+    background: #F1EBEB;
+    color: #0C0B0B;
+    font-size: 1.3125em;
+    font-weight: 50;
+    font-family: 'Open Sans', sans serif;
+    transition: background 0.25 ease-in;
+    -moz-transition: background 0.25 ease-in;
+    -webkit-transition: background 0.25 ease-in;
+}
+#first input[type=submit] {
+    font-family: 'Patua One', cursive;
+    color: #0C0B0B;
+    width: 185px;
+    height: 60px;
+    font-size: 1.3125em;
+    padding: 0.5em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    text-transform: none;
+}
+#first input[type=submit]:hover,
+#first input[type=submit]:active {
+    background: #43413e !important;
+}
+
+@media (min-width:320px)  { 
+#first input[type=text]{
+    margin-left: 0px;
+    width:320px;
+ }
+#first input[type=submit]{
+    margin-left: 70px;
+ }
+#heading{
+    font-size: 15px;
+    }
+#subheading{
+    font-size: 10px;
+    }    
+.he{
+    height: 100%;
+    width: 100%;
+ }
+ .mymodalclass{
+    display:block;
+    }
+    .classAB{
+    display: block;
+    }
+    .classCD{
+    display: block;
+    }
+    .classA{
+    display: block;
+    }
+    .classtext{
+    
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    }
+}
+@media (min-width:481px)  {
+#first input[type=submit]{
+    margin-left: 120px;
+ }
+#first input[type=text]{
+    margin-left: 150px;
+    width:425px;
+ }
+#heading{
+    font-size: 20px;
+    }
+#subheading{
+    font-size: 15px;
+    }    
+.he{
+    height: 100%;
+    width: 250px;
+ }
+ .mymodalclass{
+    display:block;position:fixed;height: 100%;width:100%;
+    }
+    .classAB{
+    display: block;height: 35%;position: absolute;left:10%;
+    }
+    .classCD{
+    display: block;height: 35%;position: absolute;left:10%;top:55%;
+    }
+    .classA{
+    display: inline-flex;height: 100%;
+    }
+    .classtext{
+    position: absolute;top:35%;
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    }
+}
+@media (min-width:641px)  { 
+#first input[type=text]{
+    margin-left: 40px;
+    width:485px;
+ }
+#first input[type=submit]{
+    margin-left: 0px;
+ }
+#heading{
+    font-size: 24px;
+    }
+#subheading{
+    font-size: 18px;
+    }    
+.stepper img {
+    height:150px;
+    width:150px;
+}
+.stepper .thumbnail{
+    height:200px;
+    width:200px;
+}
+ #image {
+    height:150px;
+    width:200px;
+ }
+ .radio {
+    height:200px;
+    width:130px;
+ }
+.he{
+    height: 100%;
+    width: 250px;
+ }
+ .mymodalclass{
+    display:block;position:fixed;height: 100%;width:100%;
+    }
+    .classAB{
+    display: block;height: 35%;position: absolute;left:17%;
+    }
+    .classCD{
+    display: block;height: 35%;position: absolute;left:17%;top:55%;
+    }
+    .classA{
+    display: inline-flex;height: 100%;
+    }
+    .classtext{
+    position: absolute;top:35%;
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    }
+
+}
+@media (min-width:961px)  { 
+#first input[type=text]{
+    margin-left: 30px;
+ }
+#first input[type=submit]{
+    margin-left: 0px;
+ }
+#heading{
+    font-size: 30px;
+    }
+#subheading{
+    font-size: 20px;
+    }    
+.stepper img {
+    height:200px;
+    width:200px;
+}
+.stepper .thumbnail{
+    height:240px;
+    width:240px;
+}
+.mymodalclass{
+    display:block;position:fixed;height: 100%;width:100%;
+    }
+    .classAB{
+    display: block;height: 35%;position: absolute;left:18%;
+    }
+    .classCD{
+    display: block;height: 35%;position: absolute;left:18%;top:55%;
+    }
+    .classA{
+    display: inline-flex;height: 100%;
+    }
+    .classtext{
+    position: absolute;top:35%;
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    }
+ #image {
+    height:200px;
+    width:230px;
+ }
+ .radio {
+    height:220px;
+    width:220px;
+ }
+ .he{
+    height: 100%;
+    width: 230px;
+ }
+.click ul{
+    margin-top: 20px;
+}
+}
+@media (min-width:1024px) { 
+#heading{
+    font-size: 35px;
+    }
+#subheading{
+    font-size: 18px;
+    } 
+    .mymodalclass{
+    display:block;position:fixed;height: 100%;width:100%;
+    }
+    .classAB{
+    display: block;height: 35%;position: absolute;left:28%;top:2%;
+    }
+    .classCD{
+    display: block;height: 35%;position: absolute;left:28%;top:57%;
+    }
+    .classA{
+    display: inline-flex;height: 100%;
+    }
+    .classtext{
+    position: absolute;top:37%;
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    }  
+.stepper img {
+    height:200px;
+    width:270px;
+}
+.stepper .thumbnail{
+    height:280px;
+    width:280px;
+}
+ #image {
+    height:240px;
+    width:270px;
+ }
+ .radio {
+    height:250px;
+    width:250px;
+ }
+ .he{
+    height: 100%;
+    width: 230px;
+ }
+.click ul{
+    margin-top: 20px;
+}
+ #first input[type=text]{
+    margin-left: 250px;
+ }
+#first input[type=submit]{
+    margin-left: 0px;
+ }
+}
+@media (min-width:1281px) { 
+#heading{
+    font-size: 40px;
+    }
+#subheading{
+    font-size: 25px;
+    }    
+    .mymodalclass{
+    display:block;position:fixed;height: 100%;width:100%;
+    }
+    .classAB{
+    display: block;height: 35%;position: absolute;left:33%;top:2%;
+    }
+    .classCD{
+    display: block;height: 35%;position: absolute;left:33%;top:57%;
+    }
+    .classA{
+    display: inline-flex;height: 100%;
+    }
+    .classtext{
+    position: absolute;top:37%;
+    }
+    .wrapclass{
+    margin-top: 40px;height: inherit;position: relative;left: auto;right: auto;
+    } 
+.he{
+    height: 100%;
+    width: 230px;
+ }
+ #first input[type=text]{
+    margin-left: 250px;
+ }
+#first input[type=text]{
+    margin-left: 0px;
+ }
+}
